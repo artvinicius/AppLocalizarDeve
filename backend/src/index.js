@@ -6,6 +6,7 @@
 // Adicionando configurações com o banco de dados > yarn add mongoose
 const express = require('express');
 const mongoose = require('mongoose');
+const routes = require('./routes')
 
 const app = express();
 
@@ -15,23 +16,7 @@ mongoose.connect('mongodb+srv://Arthur:1234@cluster0-0jfxo.mongodb.net/LocDev?re
 });
 
 app.use(express.json());
+app.use(routes);
 
-// Métodos HTTP: GET,POST,PUT,DELETE
-
-//Tipos de parâmetros:
-
-//Query Params: request.query (Filtros, ordenação, paginação...)
-//Routr Params: request.params (Identificar um recurso na alteração ou remoção)
-//Body: request.body (Dados para a criação ou alteração de um regstro)
-
-
-// MongoDB (Não-relacional)
-
-app.post('/users', (request, response) => {
-    console.log(request.body);
-    return response.json({
-        message: 'Hello Arthur'
-    });
-});
 
 app.listen(3333);
