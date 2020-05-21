@@ -11,12 +11,22 @@ module.exports = {
             techs: {
                 $in: techsArray,
             },
+            location: {
+                $near: {
+                    $geometry: {
+                        type: 'Point',
+                        coordinates: [longitude, latitude],
+                    },
+                    $maxDistance: 10000,
+                },
+            },
         });
-
-        return response.json({ devs });
+        
         //buscar todos devs num raio de 10km
 
         //filtrar tecnologia
+
+        return response.json({ devs });
 
     }
 }
