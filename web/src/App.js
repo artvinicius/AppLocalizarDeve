@@ -3,6 +3,7 @@ import React from 'react';
 import './global.css';
 import './App.css';
 import './Sidebar.css';
+import './Main.css';
 
 function App() {
   return (
@@ -36,6 +37,57 @@ function App() {
         </form>
       </aside>
       <main>
+
+    <ul>
+      <li className="dev-item">
+      <header>
+        <img src="https://avatars2.githubusercontent.com/u/57199895?s=460&u=2e2dd450b8e98478c40043913d43d7ef28deef1f&v=4" alt="Arthur Vinícius"></img>
+     <div className="user-info">
+       <strong>Arthur Vinícius</strong>
+       <span>Java, ReactJS, React Native, Node.Js</span>
+       <p>Back-end developer | Experience with RestFull Web service with spring boot</p>
+       <a href="https://github.com/artvinicius">Acessar perfil no GitHub</a>
+     </div>
+      </header>
+      </li>
+
+      <li className="dev-item">
+      <header>
+        <img src="https://avatars2.githubusercontent.com/u/57199895?s=460&u=2e2dd450b8e98478c40043913d43d7ef28deef1f&v=4" alt="Arthur Vinícius"></img>
+     <div className="user-info">
+       <strong>Arthur Vinícius</strong>
+       <span>Java, ReactJS, React Native, Node.Js</span>
+       <p>Back-end developer | Experience with RestFull Web service with spring boot</p>
+       <a href="https://github.com/artvinicius">Acessar perfil no GitHub</a>
+     </div>
+      </header>
+      </li>
+
+      <li className="dev-item">
+      <header>
+        <img src="https://avatars2.githubusercontent.com/u/57199895?s=460&u=2e2dd450b8e98478c40043913d43d7ef28deef1f&v=4" alt="Arthur Vinícius"></img>
+     <div className="user-info">
+       <strong>Arthur Vinícius</strong>
+       <span>Java, ReactJS, React Native, Node.Js</span>
+       <p>Back-end developer | Experience with RestFull Web service with spring boot</p>
+       <a href="https://github.com/artvinicius">Acessar perfil no GitHub</a>
+     </div>
+      </header>
+      </li>
+
+      <li className="dev-item">
+      <header>
+        <img src="https://avatars2.githubusercontent.com/u/57199895?s=460&u=2e2dd450b8e98478c40043913d43d7ef28deef1f&v=4" alt="Arthur Vinícius"></img>
+     <div className="user-info">
+       <strong>Arthur Vinícius</strong>
+       <span>Java, ReactJS, React Native, Node.Js</span>
+       <p>Back-end developer | Experience with RestFull Web service with spring boot</p>
+       <a href="https://github.com/artvinicius">Acessar perfil no GitHub</a>
+     </div>
+      </header>
+      </li>
+
+    </ul>
 
       </main>
     </div>
