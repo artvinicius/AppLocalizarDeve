@@ -10,6 +10,7 @@ main ul{
 @media(max-width: 650px){
 main ul{
     grid-template-columns: 1fr;
+    /* Faz parte da parte responsiva */
 }
 }
 li.dev-item{
