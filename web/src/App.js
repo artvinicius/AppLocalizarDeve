@@ -2,6 +2,7 @@ import React from 'react';
 
 import './global.css';
 import './App.css';
+import './Sidebar.css';
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
         <strong>Cadastrar</strong>
         <form>
         <div class="input-block">
-          <label htmlFor="github_username">Usuário do Github</label>
+          <label htmlFor="github_username">Usuário do Github </label>
           <input name="github_username" id="username_github" required></input>
         </div>
 
@@ -19,9 +20,9 @@ function App() {
           <input name="techs" id="techs" required></input>
         </div>
 
-        <div classname="input-group">
-        <div class="input-block">
-          <label htmlFor="latitude">Latitude</label>
+        <div className="input-group">
+            <div className="input-block">
+              <label htmlFor="latitude">Latitude</label>
           <input name="latitude" id="latitude" required></input>
         </div>
 
@@ -31,7 +32,7 @@ function App() {
         </div>
         </div>
 
-        <button type="submit">Salvar</button>
+        <button type="submit"> Salvar</button>
         </form>
       </aside>
       <main>
