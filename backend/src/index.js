@@ -6,6 +6,7 @@
 // Adicionando configurações com o banco de dados > yarn add mongoose
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors')
 const routes = require('./routes')
 
 const app = express();
@@ -15,6 +16,8 @@ mongoose.connect('mongodb+srv://Arthur:1234@cluster0-0jfxo.mongodb.net/LocDev?re
     useUnifiedTopology: true
 });
 
+app.use(cors());
+// {origin: 'http://localhost:3000' }))
 app.use(express.json());
 app.use(routes);
 
