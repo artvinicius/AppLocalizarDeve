@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import api from './services/api';
 
 import './global.css';
 import './App.css';
@@ -26,15 +27,23 @@ function App() {
     )
   }, []);
 
-  async function hableAddVev(e){
+  async function handleAddDev(e) {
     e.preventDefault();
+    const response = await api.post('/devs', {
+      github_username,
+      techs,
+      latitude,
+      longitude,
+    })
+
+    console.log(response.data);
   }
 
   return (
     <div id="app">
       <aside>
       <strong>Cadastrar</strong>
-        <form onSubmit={hableAddVev}>
+        <form onSubmit={handleAddDev}>
           <div className="input-block">
             <label htmlFor="github_username">Usuário do Github</label>
             <input
